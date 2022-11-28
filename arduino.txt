@@ -1,0 +1,15 @@
+while True:        
+    var = input()#get input from user             
+    if (var == '1'):#if the value is 1         
+        arduinodata.write(b'1')#send 1 to the arduino's Data code       
+        print ("LED turned ON")         
+        time.sleep(1)          
+    elif (var == '0'): #if the value is 0         
+        arduinodata.write(b'0')#send 0 to the arduino's Data code    
+        print ("LED turned OFF")         
+        time.sleep(1)
+    else:
+        arduinodata.write(b'0') #send 0    t   
+        print ("I'm fine too,Are you Ready to !!!")         
+        print ("Type 1 to turn ON LED and 0 to turn OFF LED")         
+        time.sleep(1)
